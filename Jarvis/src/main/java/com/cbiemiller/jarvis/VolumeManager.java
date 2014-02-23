@@ -2,7 +2,9 @@ package com.cbiemiller.jarvis;
 
 import android.app.Service;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.os.IBinder;
+import android.provider.Settings;
 
 public class VolumeManager extends Service
 {
@@ -15,5 +17,9 @@ public class VolumeManager extends Service
     @Override
     public IBinder onBind(Intent intent) {
         return null;
+        AudioManager
+        //remove once used
+        Settings.Secure
     }
+
 }
