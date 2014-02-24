@@ -10,6 +10,9 @@ import android.provider.Settings;
  * Created by Casey on 2/23/14.
  */
 public class NetworkManager extends Service {
+	String BSSID = WifiManager.EXTRA_BSSID;
+	String DEP_BLUETOOTH_ON = Settings.Secure.BLUETOOTH_ON; //Deprecated in API 17
+	String BLUETOOTH_ON = Settings.Global.BLUETOOTH_ON; 
 
     /**
      * Implement a Network control interface.
@@ -19,13 +22,5 @@ public class NetworkManager extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         return null;
-        //remove once used
-        WifiManager
-        //remove once used
-        Settings.Secure
-                //
-
-
-
     }
 }
